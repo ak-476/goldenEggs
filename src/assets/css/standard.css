@@ -1,0 +1,13 @@
+﻿/* 文字不可选 */
+*{font-size: 14px;}
+html,body,h1,h2,h3,h4,p,dl,dt,dd,ul,ol,li,form,input,textarea,select,label,table,td,div,span,a{margin:0;padding:0;outline:0;background:transparent;}
+html,body{-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased;font-family:Verdana,Arial,Helvetica,microsoft yahei,"华文细黑" !important;}
+table{border-collapse:collapse;border-spacing:0;}
+ul,ol,li{list-style:none;}
+input,select{vertical-align:middle; font-family:\5fae\8f6f\96c5\9ed1; }
+select{-webkit-appearance:none;}
+textarea{resize:none;}
+img,a img{border:0;}
+a{text-decoration:none; cursor:pointer; color:#333;}
+i,em,b{font-style:normal;font-weight:400;}
+a,img,input,textarea{-webkit-user-select:auto;}

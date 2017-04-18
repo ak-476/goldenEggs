@@ -1,0 +1,160 @@
+*{
+ font-size: 14px;
+}
+.boT{
+ position: relative;
+ font-size: 0;
+}
+.boT img.bigBg{
+ width: 100%;
+ position: relative;
+ z-index: -1;
+}
+.boT .yearWord{
+ width: 30%;
+ color: #fce29b;
+ font-size: 10px;
+ position: absolute;
+ left: 55%;
+ top: 20%;
+ letter-spacing: 5px;
+ line-height: 14px;
+}
+.egges{
+ position: absolute;
+ width: 76%;
+ left: 12%;
+ top: 32.8%;
+}
+.egges ul{
+
+}
+.egges li{
+ float: left;
+ width: 30%;
+ position: relative;
+ margin-bottom: 15%;
+}
+.egges li:last-child{
+ clear: right;
+}
+.egges li img.eggImg{
+ width: 100%;
+}
+.egges li img.eggHammer{
+ position: absolute;
+ top: -20px;
+ right: -5px;
+ width: 65%;
+ z-index: 10;
+ animation: mymove 1s linear infinite alternate;
+ /* Firefox: */
+ -moz-animation: mymove 1s linear infinite alternate;
+ /* Safari 和 Chrome: */
+ -webkit-animation: mymove 1s linear infinite alternate;
+ /* Opera: */
+ -o-animation: mymove 1s linear infinite alternate;
+}
+@keyframes mymove
+{
+  0%{
+   transform: rotate(-20deg);
+  }
+ 50%{
+  transform: rotate(20deg);
+ }
+ 100%{
+  transform: rotate(-20deg);
+ }
+}
+
+.egges li:nth-child(3n-1){
+ margin-left: 5%;
+ margin-right: 5%;
+}
+.egges li:nth-child(8){
+ margin-right: 5%;
+ margin-left: 2.5%;
+}
+.egges li:nth-child(7){
+ margin-right: 2.5%;
+ margin-left: 5%;
+}
+.egges li span.eggWord{
+ position: absolute;
+ display: inline-block;
+ color: #ffc869;
+ width: 40px;
+ height: 40px;
+ line-height: 40px;
+ text-align: center;
+ left: 50%;
+ top: 50%;
+ margin-left: -20px;
+ margin-top: -20px;
+ z-index: 20;
+ font-size: 20px;
+ font-weight: bold;
+ text-shadow: 2px 3px 3px #000;
+}
+.eggAward{
+ background: #fcc270;
+ width: 94%;
+ height: 18%;
+ left: 3%;
+ top: 80%;
+ position: absolute;
+}
+.dowebok {height: 100%}
+.dowebok ul { margin:0; line-height: 25px;}
+.dowebok ul li:nth-child(even){
+  background: #f5b355;
+}
+.dowebok ul li span{
+ display: inline-block;
+ height: 100%;
+ line-height: 25px;
+}
+.dowebok ul li span:first-child{
+ text-indent: 10px;
+ width: 40%;
+}
+.dowebok ul li span:last-child{
+ width: 60%;
+ text-indent: 10px;
+}
+.dowebokOut{
+ margin: 0px 10px;
+ height: 68%;
+ border:1px solid #B10D16;
+}
+.eggATitle{
+ height: 40px;
+ display: block;
+ text-align: center;
+ position: relative;
+}
+.eggATitle span{
+ display: inline-block;
+ min-width: 100px;
+ line-height: 40px;
+ color: #a0281c;
+ font-size: 14px;
+ font-weight: bold;
+}
+.eggATitle .eggTimg{
+ position: absolute;
+ left: -5px;
+ top: 3px;
+ width: 90px;
+ height: 35px;
+ text-align: center;
+ background: url("../images/good10.png") center center no-repeat;
+ background-size: 100% 100%;
+ line-height: 34px;
+ color: #f99a24;
+ font-weight: bold;
+}
+.str_wrap{
+ background: none;
+}

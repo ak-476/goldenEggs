@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          name="viewport"/>
+    <meta name="MobileOptimized" content="240"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/css/lib/liMarquee.css">
+    <link rel="stylesheet" href="./assets/css/lib/weui.min.css">
+    <link rel="stylesheet" href="./assets/css/lib/jquery-weui.min.css">
+
+    <style>
+        .dowebok { width: 790px; height: 200px; margin: 100px auto; font-size: 14px;}
+        .dowebok ul { margin: 0; line-height: 30px;}
+        .dowebok a { color: #333; text-decoration: none;}
+        .dowebok a:hover { text-decoration: underline;}
+    </style>
+</head>
+<body>
+
+<div class="dowebok">
+    <ul id="roll">
+
+    </ul>
+</div>
+
+<br>
+<h1>WE UI</h1>
+<button id="show-confirm" onclick="showConfirm()" class="weui-btn weui-btn_primary">显示confirm</button>
+
+
+
+
+<script src="./assets/js/lib/jquery-2.1.1.min.js"></script>
+<script src="./assets/js/lib/jquery.liMarquee.js"></script>
+<script src="./assets/js/lib/jquery-weui.min.js"></script>
+<script src="./assets/js/Util.js"></script>
+<script src="./assets/js/Config.js"></script>
+<script>
+	$(document).ready(function () {
+		Util.post('fav/searchPage.json', {}, function (data) {
+			if (data.bolist && data.bolist.length) {
+				var liHtml = '';
+				for (var i = 0; i < data.bolist.length; i++) {
+					var obj = data.bolist;
+					liHtml += '<li><span>addTime:' + obj[i].addTime + '</span></li>'
+                }
+                $('#roll').html(liHtml);
+
+				$('.dowebok').liMarquee({
+					direction: 'up'
+				});
+            }
+		});
+
+
+	});
+
+	function showConfirm() {
+		///$.toast("操作成功");
+
+		Util.showToast('保存成功', function () {
+			window.location.href = 'http://www.baidu.com';
+        });
+
+		return;
+
+		Util.showMessageBox('是否分享', function (action) {
+			if (!action) return;
+
+			if (action) {
+				console.log('分享成功');
+            }
+        });
+	}
+</script>
+
+</body>
+</html>

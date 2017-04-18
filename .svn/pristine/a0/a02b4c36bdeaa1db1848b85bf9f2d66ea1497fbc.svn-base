@@ -1,0 +1,60 @@
+var Factory = (function () {
+	var obj = function () {
+
+	};
+
+	obj.prototype = {
+		getUserStatus: function (callback) {
+			Util.post('getUserStatus.json', {}, function (data) {
+				callback && callback(data);
+			});
+		},
+
+		getEggList: function (callback) {
+			var move = function (e) {
+				e.preventDefault()
+			}; //出现弹层禁止滑动
+			document.addEventListener("touchmove", move, false);  //添加弹层禁止滑动
+
+			Util.post('activity/getList.json', {activityNum: 1}, function (data) {
+				document.removeEventListener("touchmove", move, false); //移除弹层禁止滑动
+				callback && callback(data);
+			}, function () {
+			}, true);
+		},
+
+		getCoupon: function (activityId, callback, showLoading) {
+			Util.post('activity/getCoupon.json', {activityId: activityId}, function (data) {
+				callback && callback(data);
+			}, function () {
+			}, showLoading);
+		},
+
+		getWinners: function (callback) {
+			Util.post('activity/recordPage.json', {
+				activityNum: 1,
+				pageModel: {
+					currenPage: 1,
+					pageSize: 30
+				}
+			}, function (data) {
+				callback && callback(data);
+			});
+		},
+
+		pickEggs: function (activityId, callback) {
+			Util.post('activity/getCoupon.json', {activityId: activityId}, function (data) {
+				callback && callback(data);
+			});
+		},
+
+		isShare: function (activityId, callback) {
+			Util.post('activity/isShare.json', {activityId: activityId}, function (data) {
+				callback && callback(data);
+			});
+		}
+
+	};
+
+	return new obj();
+})();

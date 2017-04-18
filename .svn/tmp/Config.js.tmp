@@ -1,0 +1,10 @@
+var Config = {};
+
+Config.api = {
+<<<<<<< .mine
+	resourcePath: 'http://192.168.11.86:9985/api/'
+=======
+	resourcePath: 'http://192.168.11.58:9988/api/'
+>>>>>>> .r7775
+	//resourcePath: 'http://wx.xxxxxx/api'
+};

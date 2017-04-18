@@ -1,0 +1,6 @@
+var Config = {};
+
+Config.api = {
+	resourcePath: 'http://192.168.11.58:9988/api/'
+	//resourcePath: 'http://wx.xxxxxx/api'
+};

@@ -1,0 +1,433 @@
+*{
+ font-size: 14px;
+}
+button{
+ background: none;
+ border: none;
+ outline: none;
+}
+.boT{
+ position: relative;
+ font-size: 0;
+}
+.boT img.bigBg{
+ width: 100%;
+ position: relative;
+ z-index: -1;
+}
+.boT .yearWord{
+ width: 16%;
+ color: #fce29b;
+ font-size: 10px;
+ position: absolute;
+ left: 55%;
+ top: 21%;
+ letter-spacing: 5px;
+ line-height: 14px;
+}
+.boT .yearWord img{
+ width: 100%;
+}
+.egges{
+ position: absolute;
+ width: 76%;
+ left: 12%;
+ top: 32.8%;
+}
+.egges ul{
+
+}
+.egges li{
+ float: left;
+ width: 30%;
+ position: relative;
+ margin-bottom: 13%;
+}
+.egges li:last-child{
+ clear: right;
+}
+.egges li img.eggImg{
+ width: 100%;
+}
+.egges li img.eggHammer{
+ position: absolute;
+ top: -20px;
+ right: -5px;
+ width: 65%;
+ z-index: 10;
+ animation: mymove 1s linear infinite alternate;
+ /* Firefox: */
+ -moz-animation: mymove 1s linear infinite alternate;
+ /* Safari 和 Chrome: */
+ -webkit-animation: mymove 1s linear infinite alternate;
+ /* Opera: */
+ -o-animation: mymove 1s linear infinite alternate;
+}
+@keyframes mymove
+{
+  0%{
+   transform: rotate(-20deg);
+  }
+ 50%{
+  transform: rotate(20deg);
+ }
+ 100%{
+  transform: rotate(-20deg);
+ }
+}
+
+.egges li:nth-child(3n-1){
+ margin-left: 5%;
+ margin-right: 5%;
+}
+.egges li:nth-child(8){
+ margin-right: 13%;
+ margin-left: 7%;
+}
+.egges li:nth-child(7){
+ margin-right: 7%;
+ margin-left: 13%;
+}
+.egges li span.eggWord{
+ position: absolute;
+ display: inline-block;
+ color: #ffc869;
+ width: 40px;
+ height: 40px;
+ line-height: 40px;
+ text-align: center;
+ left: 50%;
+ top: 50%;
+ margin-left: -20px;
+ margin-top: -20px;
+ z-index: 20;
+ font-size: 20px;
+ font-weight: bold;
+ text-shadow: 2px 3px 3px #000;
+}
+.eggAward{
+ background: #fcc270;
+ width: 94%;
+ height: 18%;
+ left: 3%;
+ top: 80%;
+ position: absolute;
+}
+.dowebok {height: 100%}
+.dowebok ul { margin:0; line-height: 25px;}
+.dowebok ul li{
+ height: 25px;
+}
+.dowebok ul li:nth-child(even){
+  background: #f5b355;
+}
+.dowebok ul li span{
+ display: inline-block;
+ height: 100%;
+ line-height: 25px;
+ font-size: 10px;
+ overflow: hidden;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+}
+.dowebok ul li span:first-child{
+ text-indent: 5px;
+ width: 35%;
+}
+.dowebok ul li span:last-child{
+ width: 65%;
+ text-indent: 10px;
+
+}
+.dowebokOut{
+ margin: 0px 10px;
+ height: 68%;
+ border:1px solid #B10D16;
+}
+.eggATitle{
+ height: 40px;
+ display: block;
+ text-align: center;
+ position: relative;
+}
+.eggATitle span{
+ display: inline-block;
+ min-width: 100px;
+ line-height: 40px;
+ color: #a0281c;
+ font-size: 14px;
+ font-weight: bold;
+}
+.eggATitle .eggTimg{
+ position: absolute;
+ left: -5px;
+ top: 3px;
+ width: 90px;
+ height: 35px;
+ text-align: center;
+ background: url("../images/good10.png") center center no-repeat;
+ background-size: 100% 100%;
+ line-height: 34px;
+ color: #f99a24;
+ font-weight: bold;
+}
+.str_wrap{
+ background: none;
+}
+.eggFenge{
+ background: #e89828;
+ overflow: hidden;
+}
+.str_wrap.str_active{
+ background: none;
+}
+.eggFenge .eggProdectList{
+ position: relative;
+ margin: 10px 10px 0 10px;
+ background: #fcc270;
+}
+.eggFenge .eggProdectList ul{
+ margin: 0;
+ overflow: hidden;
+ padding: 20px 0 20px;
+}
+.eggFenge .eggProdectList ul li{
+ float: left;
+ width: 22.5%;
+ text-align: center;
+ margin: 0 2% 10px 0;
+ position: relative;
+}
+.eggFenge .eggProdectList ul li:nth-child(4n-3){
+ margin-left: 2%;
+}
+.eggFenge .eggProdectList ul li img{
+ width: 100%;
+}
+.eggFenge .eggProdectList ul li img.specail{
+ position: absolute;
+ width: 40px;
+ right: -10px;
+ top: -20px;
+}
+.eggRules{
+ position: relative;
+ margin: 30px 10px 0px;
+ background: #FCC270;
+}
+.eggRules .eggRulesWord{
+ margin:0 15px 30px;
+ padding-bottom: 20px;
+}
+.eggRules .eggRulesWord p{
+ color: #a41b15;
+ font-size: 12px;
+ padding: 5px 0;
+ border-top: 1px solid #f8bd6a;
+}
+.eggRules .eggRulesWord p:first-child{
+ border: none;
+}
+.eggCard{
+ text-align: center;
+}
+.eggCard>img{
+  width: 40%;
+}
+.eggCard>p{
+ color: white;
+ font-size: 12px;
+ height: 30px;
+ line-height: 30px;
+}
+.eggCard>a{
+ color: #a41b15;
+ overflow: hidden;
+ display: block;
+ text-align: center;
+ margin: 20px 0;
+}
+.eggCard>a img{
+ width: 25px;
+ vertical-align: middle;
+ margin-top: -24px;
+ margin-right: 5px;
+}
+
+.eggCard>a p{
+ display: inline-block;
+ text-align: center;
+}
+.eggCard>a p span:first-child{
+ font-size: 12px;
+}
+.eggCard>a p span:last-child{
+ font-size: 20px;
+}
+.eggCard>span{
+ font-size: 12px;
+ color: #a41b15;
+ display: block;
+ margin-bottom: 20px;
+}
+.eggsAlet{
+ z-index: 100;
+ width: 100%;
+ height: 100%;
+ position: fixed;
+ left: 0;
+ top: 0;
+ display: none;
+}
+.eggsAlet .alertOut{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ left: 0;
+ top:0;
+ background: #000;
+ opacity: 0.7;
+}
+.eggsAlet .alertIn{
+ position: absolute;
+ z-index: 10;
+ width: 90%;
+ left: 5%;
+ top: 25px;
+ background: white;
+ text-align: center;
+}
+
+.eggsAlet .alertIn img{
+ width: 150px;
+ margin-top: 20px;
+}
+.eggsAlet .alertIn p.aTop{
+ height: 40px;
+ line-height: 40px;
+ font-size: 18px;
+ color: white;
+ text-align: center;
+ background: #a41b15;
+ font-weight: bold;
+}
+.eggsAlet .alertIn div.aDetails{
+ text-align: left;
+ margin: 10px;
+ border: 1px solid #c2c2c2;
+ background: #eeeeee;
+ padding: 5px 0;
+}
+.eggsAlet .alertIn div.aDetails p{
+ margin: 0 10px;
+ line-height: 25px;
+}
+.eggsAlet .alertIn button.getSure{
+ width: 94%;
+ margin: 15px 3% 0;
+ color: white;
+ font-size: 16px;
+ height: 40px;
+ background: #b71c24;
+}
+.eggsAlet .alertIn button.changeAddress{
+ width: 94%;
+ height: 40px;
+ margin: 15px 3%;
+ border: 1px solid #b71c24;
+ color: #b71c24;
+}
+.eggsAlet .alertIn p.aGet{
+ font-size: 16px;
+ color: #b71c24;
+ font-weight: bold;
+ margin:5px 0 10px;
+}
+.eggsAlet .alertIn p.aOut{
+ color: #8f8f8f;
+ font-size: 12px;
+}
+.dateShare{
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 2000;
+ display: none;
+}
+.dateShare .shareOut{
+ width: 100%;
+ height: 100%;
+ background: #000000;
+ opacity: 0.7;
+}
+.dateShare .shareBox{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ left: 0;
+ top: 0;
+ z-index: 10;
+}
+.dateShare .shareBox img{
+ width: 100%;
+}
+.dateShare .shareBox button{
+ position: absolute;
+ width: 33%;
+ height: 7%;
+ right: 22%;
+ top: 32%;
+ z-index: 20;
+}
+.egges li img.eggGetImg{
+ width: 135%;
+ position: absolute;
+ left: -26%;
+ bottom: -9%;
+ display: none;
+}
+.egges li.active img.eggImg{
+ opacity: 0;
+}
+.egges li.active span.eggWord{
+ display: none;
+}
+.egges li.notGot img.eggHammer{
+ display: block;
+}
+.egges li img.eggHammer{
+ display: none;
+}
+.egges li.active img.eggHammer{
+ display: none;
+}
+.egges li.active img.eggGetImg{
+ display: block;
+}
+.egges li.active img.getProduct{
+ position: absolute;
+ width: 100%;
+ z-index: -1;
+ animation: getProduct 0.5s linear  alternate;
+ /* Firefox: */
+ -moz-animation: getProduct 0.5s linear  alternate;
+ /* Safari 和 Chrome: */
+ -webkit-animation: getProduct 0.5s linear  alternate;
+ /* Opera: */
+ -o-animation: getProduct 0.5s linear  alternate;
+ opacity: 1;
+ top: -4%;
+}
+@keyframes getProduct
+{
+ 0%{
+  opacity: 0;
+  top: 20%;
+ }
+ 100%{
+  opacity: 1;
+  top: -4%;
+ }
+}

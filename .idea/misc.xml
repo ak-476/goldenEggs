@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="svn://139.196.195.24/project/branches" />
+                  <option value="svn://139.196.195.24/project/document" />
+                  <option value="svn://139.196.195.24/project/outsource" />
+                  <option value="svn://139.196.195.24/project/prototype" />
+                  <option value="svn://139.196.195.24/project/shop" />
+                  <option value="svn://139.196.195.24/project/shop_new" />
+                  <option value="svn://139.196.195.24/project/static" />
+                  <option value="svn://139.196.195.24/project/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="svn://139.196.195.24/project/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

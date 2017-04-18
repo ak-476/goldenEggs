@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          name="viewport"/>
+    <meta name="MobileOptimized" content="240"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/css/standard.css">
+    <link rel="stylesheet" href="./assets/css/yoko.css">
+</head>
+<body>
+<div class="boT">
+    <img class="bigBg" src="./assets/images/bgeggses.jpg" alt="">
+    <p class="yearWord">
+        <span>福幸年鸡</span><br>
+        <span>到运来年</span><br>
+        <span>一过味砸</span><br>
+        <span>定丰更金</span><br>
+        <span>旺年浓蛋</span>
+    </p>
+</div>
+<script src="assets/js/lib/jquery-2.1.1.min.js"></script>
+<script src="assets/js/Util.js"></script>
+<script src="assets/js/Config.js"></script>
+<script>
+	$(document).ready(function () {
+		//http://192.168.11.58:9999/api/member/userinfo.json
+		Util.post('member/myCert.json', {}, function (data) {
+			console.log('POST SUCCESS', data);
+        });
+	});
+</script>
+</body>
+</html>

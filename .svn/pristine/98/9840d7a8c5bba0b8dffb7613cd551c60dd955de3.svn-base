@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="assets/js/lib/jquery-2.1.1.min.js"></script>
+<script src="assets/js/Util.js"></script>
+<script src="assets/js/Config.js"></script>
+<script>
+	$(document).ready(function () {
+		//http://192.168.11.58:9999/api/member/userinfo.json
+		Util.post('member/userinfo.json', {}, function (data) {
+			console.log('POST SUCCESS', data);
+        });
+	});
+</script>
+</body>
+</html>

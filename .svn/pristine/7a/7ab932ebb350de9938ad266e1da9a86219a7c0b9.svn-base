@@ -1,0 +1,80 @@
+var Util = (function () {
+	var that = this;
+	var obj = function () {
+
+	};
+
+	obj.prototype = {
+		post: function (url, params, successCallback, errorCallback) {
+			var resourcePath = Config.api.resourcePath;
+			if (url == 'weixin/jssdkconfig.json') {
+				resourcePath = Config.api.weixinPath;
+			}
+
+			var startTime = new Date();
+			$.ajax({
+				url: Config.api.resourcePath  + url,
+				type: 'POST',
+				async: true,
+				data: JSON.stringify(params),
+				timeout: 5000,
+				dataType: 'json',
+				contentType: 'application/json; charset=utf-8',
+				success: function (data) {
+					console.group(Config.api.resourcePath + url);
+					console.debug('%c参数', 'font-weight:bold;color:black;');
+					console.debug(JSON.stringify(params));
+					console.debug('%c返回', 'font-weight:bold;color:black;');
+					console.debug(JSON.stringify(data.data).substring(0, 100));
+					console.debug('%c耗时', 'font-weight:bold;color:black;');
+					console.debug((new Date().getTime() - startTime) + ' 毫秒');
+					console.groupEnd();
+
+					if (data.status == 200) {
+						console.log(JSON.parse(JSON.stringify(data.data)));
+						successCallback && successCallback(data.data);
+					} else {
+						console.log(JSON.parse(JSON.stringify(data)));
+						errorCallback && errorCallback(data);
+					}
+				},
+				error: function (xhr, textStatus) {
+					console.log('错误');
+					console.log(xhr);
+					console.log(textStatus);
+					// that.showAlert('', '服务器异常,请稍后再试');
+				},
+				complete: function () {
+
+				}
+			})
+		},
+
+		showMessageBox: function (content, callback, title) {
+			$.confirm({
+				title: title || '系统提示',
+				text: content || '内容文案',
+				onOK: function () {
+					callback && callback(true);
+				},
+				onCancel: function () {
+					callback && callback(false);
+				}
+			});
+		},
+
+		showAlert: function (content, callback, title) {
+			$.alert(content, title || '系统提示', function () {
+				callback && callback();
+			});
+		},
+
+		showToast: function (content, callback, icon) {
+			$.toast(content || '', icon || '', function () {
+				callback && callback();
+			});
+		}
+	};
+
+	return new obj();
+})();

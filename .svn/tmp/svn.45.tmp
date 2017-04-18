@@ -1,0 +1,22 @@
+var Config = {};
+
+Config.api = {
+	resourcePath: 'http://192.168.11.86:9985/api/',
+	weixinPath: 'http://192.168.11.86:9985/wxauth/',
+	resourcePathCommon: 'http://192.168.11.86:9985/common/',
+	v2Path: 'http://test.51gonggui.com/'
+};
+
+// Config.api = {
+// 	resourcePath: 'http://test.51gonggui.com/commonrail/api/',
+// 	weixinPath: 'http://test.51gonggui.com/commonrail/wxauth/',
+// 	resourcePathCommon: 'http://test.51gonggui.com/commonrail/common/',
+// 	v2Path: 'http://test.51gonggui.com/'
+// };
+
+// Config.api = {
+// 	locationPath: 'http://192.168.11.87:9999/v2/',
+// 	locationPathTest: 'http://test.51gonggui.com/commonrail/',
+// 	locationPathWx: 'http://wx.51gonggui.com/commonrail/',
+// 	location: 'http://192.168.11.87:9985'
+// }

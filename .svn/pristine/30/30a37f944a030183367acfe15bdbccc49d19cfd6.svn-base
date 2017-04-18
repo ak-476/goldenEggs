@@ -1,0 +1,86 @@
+var Factory = (function () {
+	var obj = function () {
+
+	};
+
+	obj.prototype = {
+		getUserStatus: function (callback) {
+			Util.post('getUserStatus.json', {}, function (data) {
+				callback && callback(data);
+			});
+		},
+
+		getEggList: function (callback) {
+			Util.post('activity/getList.json', {activityNum: 1}, function (data) {
+				callback && callback(data);
+			}, function () {
+			}, true);
+		},
+
+		getCoupon: function (activityId, callback, showLoading) {
+			Util.post('activity/getCoupon.json', {activityId: activityId}, function (data) {
+				callback && callback(data);
+			}, function () {
+			}, showLoading);
+		},
+
+		getWinners: function (callback) {
+			Util.post('activity/recordPage.json', {
+				activityNum: 1,
+				pageModel: {
+					currenPage: 1,
+					pageSize: 30
+				}
+			}, function (data) {
+				callback && callback(data);
+			});
+		},
+
+		getAddress: function (callback) {
+			Util.post('member/findShippingAddressList.json', {type: 2}, function (data) {
+				callback && callback(data);
+			});
+		},
+
+		shareGift: function (data, callback) {
+			Util.post('weixin/jssdkconfig.json', { url: location.href}, function (jssdkConfig) {
+				console.log(jssdkConfig);
+				jssdkConfig["debug"] = false;
+				jssdkConfig["jsApiList"] = ["onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ", "onMenuShareWeibo"];
+				wx.config(jssdkConfig);
+
+				wx.ready(function() {
+					alert(2)
+					var shareContent = {
+						"title" : "共轨之家|砸金蛋送礼品",
+						"desc" : "师傅们，朋友们，赶紧过来拼手气、验人品啦~",
+						"link" : Config.api.v1Path,
+						"imgUrl" : "http://wx.51gonggui.com/commonrail/images/doubleEle/shareLottery.jpg",
+						"type" : "",
+						"dataUrl" : "",
+						"success" : function() {
+							window.location.href = Config.api.v1Path;
+						},
+						"cancel" : function() {
+						}
+					};
+					wx.onMenuShareTimeline(shareContent);
+					wx.onMenuShareAppMessage(shareContent);
+					wx.onMenuShareQQ(shareContent);
+					wx.onMenuShareWeibo(shareContent);
+				});
+			}, function () {
+				console.log(1)
+			}, Config.api.weixinPath);
+		},
+
+		isShare: function (activityId, callback) {
+			Util.post('activity/isShare.json', {activityId: activityId}, function (data) {
+				callback && callback(data);
+			});
+		}
+
+	};
+
+	return new obj();
+})();

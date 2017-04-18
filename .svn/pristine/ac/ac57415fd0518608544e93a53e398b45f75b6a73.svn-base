@@ -1,0 +1,47 @@
+var Factory = (function () {
+	var obj = function () {
+
+	}
+
+	obj.prototype = {
+		getEggList: function (callback) {
+			var options = {
+				message: '一大波礼品正在来袭~',
+				theme: 'sk-circle'
+
+			};
+			HoldOn.open(options);
+
+			Util.post('activity/getList.json', {activityNum: 1}, function (data) {
+				HoldOn.close();
+				callback && callback(data);
+			});
+		},
+
+		getCoupon: function (activeId, callback) {
+			Util.post('activity/getCoupon.json', {activityId: activeId}, function (data) {
+				callback && callback(data);
+			})
+		},
+
+		getWinners: function (callback) {
+			Util.post('activity/recordPage.json', {
+				activityNum: 1,
+				pageModel: {
+					currenPage: 1,
+					pageSize: 30
+				}
+			}, function (data) {
+				callback && callback(data);
+			});
+		},
+
+		pickEggs: function (activeId, callback) {
+			Util.post('activity/getCoupon.json', {activityId: activeId}, function (data) {
+				callback && callback(data);
+			});
+		}
+	};
+
+	return new obj();
+})();

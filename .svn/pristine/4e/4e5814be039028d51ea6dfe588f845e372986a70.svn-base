@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          name="viewport"/>
+    <meta name="MobileOptimized" content="240"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/css/lib/liMarquee.css">
+    <link rel="stylesheet" href="./assets/css/standard.css">
+    <link rel="stylesheet" href="./assets/css/yoko.css">
+
+</head>
+<body>
+<div class="boT">
+    <img class="bigBg" src="./assets/images/bgeggses.jpg" alt="">
+    <p class="yearWord">
+        <span>福幸年鸡</span><br>
+        <span>到运来年</span><br>
+        <span>一过味砸</span><br>
+        <span>定丰更金</span><br>
+        <span>旺年浓蛋</span>
+    </p>
+
+    <div class="egges">
+        <ul>
+            <li>
+                <img class="eggHammer" src="./assets/images/good16.png" alt="">
+                <img class="eggImg" src="./assets/images/goodEggs.png" alt="">
+                <span class="eggWord">福</span>
+            </li>
+            <li>
+                <img class="eggHammer" src="./assets/images/good16.png" alt="">
+                <img class="eggImg" src="./assets/images/goodEggs.png" alt="">
+                <span class="eggWord">禄</span>
+            </li>
+            <li>
+                <img class="eggHammer" src="./assets/images/good16.png" alt="">
+                <img class="eggImg" src="./assets/images/goodEggs.png" alt="">
+                <span class="eggWord">寿</span>
+            </li>
+            <li>
+                <img class="eggHammer" src="./assets/images/good16.png" alt="">
+                <img class="eggImg" src="./assets/images/goodEggs.png" alt="">
+                <span class="eggWord">喜</span>
+            </li>
+            <li>
+                <img class="eggHammer" src="./assets/images/good16.png" alt="">
+                <img class="eggImg" src="./assets/images/goodEggs.png" alt="">
+                <span class="eggWord">财</span>
+            </li>
+            <li>
+                <img class="eggHammer" src="./assets/images/good16.png" alt="">
+                <img class="eggImg" src="./assets/images/goodEggs.png" alt="">
+                <span class="eggWord">爱</span>
+            </li>
+            <li>
+                <img class="eggHammer" src="./assets/images/good16.png" alt="">
+                <img class="eggImg" src="./assets/images/goodEggs.png" alt="">
+                <span class="eggWord">和</span>
+            </li>
+            <li>
+                <img class="eggHammer" src="./assets/images/good16.png" alt="">
+                <img class="eggImg" src="./assets/images/goodEggs.png" alt="">
+                <span class="eggWord">吉</span>
+            </li>
+        </ul>
+
+    </div>
+    <div class="eggAward">
+        <div class="eggATitle">
+            <span>本期中奖名单</span>
+            <p class="eggTimg">中奖名单</p>
+        </div>
+        <div class="dowebokOut">
+            <div class="dowebok">
+                <ul id="roll">
+
+                </ul>
+            </div>
+        </div>
+
+     </div>
+</div>
+<div class="eggFenge">
+    <img src="./assets/images/good11.png" alt="">
+</div>
+<script src="./assets/js/lib/jquery-2.1.1.min.js"></script>
+<script src="./assets/js/lib/jquery.liMarquee.js"></script>
+<script src="./assets/js/Util.js"></script>
+<script src="./assets/js/Config.js"></script>
+<script>
+	$(document).ready(function () {
+		//http://192.168.11.58:9999/api/member/userinfo.json
+		Util.post('member/myCert.json', {}, function (data) {
+			console.log('POST SUCCESS', data);
+        });
+        $(".egges li").click(function() {
+            alert($(this).index())
+        });
+        Util.post('fav/searchPage.json', {}, function (data) {
+            if (data.bolist && data.bolist.length) {
+                var liHtml = '';
+                for (var i = 0; i < data.bolist.length; i++) {
+                    var obj = data.bolist;
+                    liHtml += '<li><span>18391810995</span><span>王凯中奖10000000元</span></li>'
+                }
+                $('#roll').html(liHtml);
+
+                $('.dowebok').liMarquee({
+                    direction: 'up',
+                    scrollamount: 30
+                });
+            }
+        });
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          name="viewport"/>
+    <meta name="MobileOptimized" content="240"/>
+    <title>共轨之家|新年砸金蛋</title>
+    <link rel="stylesheet" href="./src/assets/css/lib/liMarquee.css">
+    <link rel="stylesheet" href="./src/assets/css/lib/weui.min.css">
+    <link rel="stylesheet" href="./src/assets/css/lib/HoldOn.min.css">
+    <link rel="stylesheet" href="./src/assets/css/lib/jquery-weui.min.css">
+    <link rel="stylesheet" href="./src/assets/css/standard.css?v=5">
+    <link rel="stylesheet" href="./src/assets/css/yoko.css?v=5">
+
+    <script>
+
+    </script>
+
+</head>
+<body>
+<div class="boT">
+    <img class="bigBg" src="./src/assets/images/bgeggses3.jpg" alt="">
+
+    <div class="egges">
+        <ul>
+            <li class="noproduct" onclick="eggClick(0)">
+                <img class="eggHammer" src="./src/assets/images/good16.png" alt="">
+                <img class="eggImg" src="./src/assets/images/goodEggs.png" alt="">
+                <img class="eggGetImg" src="./src/assets/images/goodEggsCut.png" alt="">
+                <span class="eggWord">福</span>
+            </li>
+            <li class="noproduct" onclick="eggClick(1)">
+                <img class="eggHammer" src="./src/assets/images/good16.png" alt="">
+                <img class="eggImg" src="./src/assets/images/goodEggs.png" alt="">
+                <img class="eggGetImg" src="./src/assets/images/goodEggsCut.png" alt="">
+                <span class="eggWord">禄</span>
+
+            </li>
+            <li class="noproduct" onclick="eggClick(2)">
+                <img class="eggHammer" src="./src/assets/images/good16.png" alt="">
+                <img class="eggImg" src="./src/assets/images/goodEggs.png" alt="">
+                <img class="eggGetImg" src="./src/assets/images/goodEggsCut.png" alt="">
+                <span class="eggWord">寿</span>
+            </li>
+            <li class="noproduct" onclick="eggClick(3)">
+                <img class="eggHammer" src="./src/assets/images/good16.png" alt="">
+                <img class="eggImg" src="./src/assets/images/goodEggs.png" alt="">
+                <img class="eggGetImg" src="./src/assets/images/goodEggsCut.png" alt="">
+                <span class="eggWord">喜</span>
+            </li>
+            <li class="noproduct" onclick="eggClick(4)">
+                <img class="eggHammer" src="./src/assets/images/good16.png" alt="">
+                <img class="eggImg" src="./src/assets/images/goodEggs.png" alt="">
+                <img class="eggGetImg" src="./src/assets/images/goodEggsCut.png" alt="">
+                <span class="eggWord">财</span>
+            </li>
+            <li class="noproduct" onclick="eggClick(5)">
+                <img class="eggHammer" src="./src/assets/images/good16.png" alt="">
+                <img class="eggImg" src="./src/assets/images/goodEggs.png" alt="">
+                <img class="eggGetImg" src="./src/assets/images/goodEggsCut.png" alt="">
+                <span class="eggWord">爱</span>
+            </li>
+            <li class="noproduct" onclick="eggClick(6)">
+                <img class="eggHammer" src="./src/assets/images/good16.png" alt="">
+                <img class="eggImg" src="./src/assets/images/goodEggs.png" alt="">
+                <img class="eggGetImg" src="./src/assets/images/goodEggsCut.png" alt="">
+                <span class="eggWord">和</span>
+            </li>
+            <li class="noproduct" onclick="eggClick(7)">
+                <img class="eggHammer" src="./src/assets/images/good16.png" alt="">
+                <img class="eggImg" src="./src/assets/images/goodEggs.png" alt="">
+                <img class="eggGetImg" src="./src/assets/images/goodEggsCut.png" alt="">
+                <span class="eggWord">吉</span>
+            </li>
+        </ul>
+
+    </div>
+    <div class="eggAward">
+        <div class="eggATitle">
+            <span>本期中奖名单</span>
+            <p class="eggTimg">中奖名单</p>
+        </div>
+        <div class="dowebokOut">
+            <div class="dowebok">
+                <ul id="roll">
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="eggFenge">
+    <img src="./src/assets/images/good11.png" alt="">
+    <div class="eggProdectList">
+        <div class="eggATitle">
+            <span></span>
+            <p class="eggTimg">奖品池</p>
+        </div>
+        <ul>
+            <li>
+                <img src="./src/assets/images/c1.png" alt="">
+                <img class="specail" src="./src/assets/images/good9.png" alt="">
+                <p>精修大师(19800元)<p/>
+            </li>
+            <li>
+                <img src="./src/assets/images/c2.png" alt="">
+                <img class="specail" src="./src/assets/images/good9.png" alt="">
+                <p>尿素泵试验台(14000元)</p>
+            </li>
+            <li><img src="./src/assets/images/c3.png" alt=""><p>精修大师</p></li>
+            <li><img src="./src/assets/images/c4.png" alt=""><p>尿素泵试验台</p></li>
+            <li><img src="./src/assets/images/c5.png" alt=""><p>跳线盒</p></li>
+            <li><img src="./src/assets/images/c6.png" alt=""><p>示波器</p></li>
+            <li><img src="./src/assets/images/c7.png" alt=""><p>共轨之家特刊2015</p></li>
+            <li><img src="./src/assets/images/c8.png" alt=""><p>共轨之家特刊2016</p></li>
+            <li><img src="./src/assets/images/c9.png" alt=""><p>共轨之家电路图册</p></li>
+            <li><img src="./src/assets/images/c10.png" alt=""><p>制服</p></li>
+            <li><img src="./src/assets/images/c15.png" alt=""><p>犇犇课堂</p></li>
+            <li><img src="./src/assets/images/c12.png" alt=""><p>会员</p></li>
+            <li><img src="./src/assets/images/c13.png" alt=""><p>计量阀拨叉</p></li>
+
+        </ul>
+
+    </div>
+    <div class="eggRules">
+        <div class="eggATitle">
+            <p class="eggTimg">活动细则</p>
+        </div>
+        <div class="eggRulesWord">
+            <p>1、新年砸金蛋活动为期8天（大年初一至初八），每天解锁一颗金蛋</p>
+            <p>2、参与者仅限共轨之家认证会员和付费会员，非认证用户请点击会员地带-个人中心进行免费认证</p>
+            <p>3、活动期间，用户每天分享一次此活动页面，即可解锁当天的金蛋</p>
+            <p>4、本活动抽到的现金券，不与其它优惠、赠品及活动同时使用，且不可兑现</p>
+            <p>5、两项大奖得主，请在中奖后及时和共轨之家取得联系</p>
+            <p>6、用户所获现金抵用券会自动存放至会员地带-个人中心，实物奖品在活动结束两周后免费寄出</p>
+            <p>7、代金券使用有效期2017年1月28日-3月31日</p>
+            <p>8、本活动最终解释权归共轨之家所有</p>
+        </div>
+    </div>
+
+    <div class="eggCard">
+        <img src="./src/assets/images/cordWen.jpg" alt="">
+        <p>长按二维码关注共轨之家微信平台</p>
+        <a href="tel:4001681828">
+            <img src="./src/assets/images/good12.png" alt="">
+            <p>
+                <span>点击拨打产品资讯热线</span><br>
+                <span>4001681828</span>
+            </p>
+        </a>
+        <span>共轨之家&copy;2017</span>
+    </div>
+</div>
+
+<div id="bcDiv" class="eggsAlet">
+    <div class="alertOut"></div>
+    <div class="alertIn">
+        <p class="aTop">恭喜你！</p>
+        <img src="./src/assets/images/c13.png" alt="">
+        <p class="aGet">获得计量阀拨叉一个</p>
+        <p class="aSure">请确认您的地址信息</p>
+        <p class="aOut">奖品会在活动结束两周后统一寄出（包邮哦）</p>
+        <div class="aDetails">
+            <p>地址： <span id="nameSpn"></span></p>
+            <p>联系电话： <span id="phoneSpn"></span></p>
+            <p>地址： <span id="addressSpn"></span></p>
+        </div>
+        <button class="getSure">确认无误</button>
+        <button class="changeAddress">地址有误，前去修改</button>
+    </div>
+</div>
+
+<div id="giftAlert" class="eggsAlet">
+    <div class="alertOut"></div>
+    <div class="alertIn"  style="top: 100px;">
+        <p class="aTop">恭喜你！</p>
+        <img id="giftImg" src="./src/assets/images/c1.png" alt="">
+        <p id="giftP" class="aGet">获得计量阀拨叉一个</p>
+        <button class="getSure">关闭</button>
+    </div>
+</div>
+
+<div id="orCodeDiv" class="eggsAlet">
+    <div class="alertOut"></div>
+    <div class="alertIn" style="top: 100px;">
+        <img src="./src/assets/images/cordWen.jpg" alt="" style="max-width: 140px;max-height: 140px;">
+        <p>长按二维码关注我,砸蛋还来得及</p>
+        <button class="getSure">关闭</button>
+    </div>
+</div>
+
+
+<div class="dateShare">
+    <div class="shareOut"></div>
+    <div class="shareBox">
+        <img src="./src/assets/images/20161105001.png?v=20170119" alt="">
+        <button class="outShare"></button>
+    </div>
+</div>
+
+
+<div id="product" class="eggsAlet">
+    <div class="alertOut"></div>
+    <div class="alertIn"  style="top: 100px;">
+        <img id="productImg" src="./src/assets/images/c1.png" alt="">
+        <p id="productP" class="aGet">获得计量阀拨叉一个</p>
+        <button class="getSure">关闭</button>
+    </div>
+</div>
+
+<script src="./src/assets/js/lib/jquery-2.1.1.min.js"></script>
+<script src="./src/assets/js/lib/jweixin.js"></script>
+<script src="./src/assets/js/lib/jquery.liMarquee.js"></script>
+<script src="./src/assets/js/lib/jquery-weui.min.js"></script>
+<script src="./src/assets/js/lib/jquery.cookie.js"></script>
+<script src="./src/assets/js/lib/HoldOn.min.js"></script>
+<script src="./src/assets/js/control.js?v=5"></script>
+<script src="./src/assets/js/Util.js?v=5"></script>
+<script src="./src/assets/js/Config.js?v=5"></script>
+<script src="./src/assets/js/Factory.js?v=5"></script>
+<script>
+    Util.banLongPress();
+    //Factory.shareGift();
+    var userStatus = 0;
+    var dataList = [];
+    Factory.initLogin(function () {
+        $(document).ready(function () {
+            Factory.getUserStatus(function (data) {
+                //data.userStatus = 0;
+                userStatus = data.userStatus;
+            });
+//			$('#orCodeDiv').show();
+//			return;
+
+            Factory.getEggList(function (data) {
+                $(".egges li").each(function (e) {
+                    //e.stopPropagation();
+                    var index = $(this).index();
+                    var obj = data[index];
+                    dataList = data || [];
+
+                    operation.candidates(this, index, obj);
+                });
+            });
+
+        });
+    }, Config.api.resourcePath.indexOf('51gonggui') == -1, $.queryByName('code'));
+
+    Factory.getWinners(function (data) {
+        if (data.bolist && data.bolist.length) {
+            var liHtml = '';
+            for (var i = 0; i < data.bolist.length; i++) {
+                var obj = data.bolist[i];
+                liHtml +=
+                        '<li>' +
+                        '<span>' + obj.phone + '</span>' +
+                        '<span>' + obj.couponInfo + '</span>' +
+                        '</li>'
+            }
+            $('#roll').html(liHtml);
+
+            $('.dowebok').liMarquee({
+                direction: 'up',
+                scrollamount: 30,
+                hoverstop: false
+            });
+        }
+    });
+
+    var operation = {
+        initShare: function (obj) {
+            Util.share.shareTitle = obj.shareTitle || '';
+            Util.share.shareDesc = obj.shareContext || '';
+            Util.share.shareImg = obj.shareImg || '';
+            Util.share.activityId = obj.id || '';
+        },
+        candidates: function (el, index, obj) {
+            if (obj.statusValue == 1) {
+                $(el).addClass("notGot");
+                this.initShare(obj);
+                Factory.shareGift();
+            } else if (obj.lotteryStatus == 2 || obj.lotteryStatus == 3) {
+                $(el).addClass("notGot active");
+            }
+
+            if (obj.couponImg) {
+                $(".egges li").eq(index).addClass('active').append('<img class="getProduct" src="' + obj.couponImg + '">');
+                //$(".eggsAlet img").attr("src", obj.couponImg || '')
+            }
+        },
+
+        showMsg: function (obj, callback) {
+            switch (obj.statusValue) {
+                case 1:
+                    callback && callback();
+                    break;
+                case 2:
+                    if (obj.lotteryStatus == 2) {
+                        if (obj.couponClass == 3) {
+                            Util.showAlert('【' + obj.activityName + '】蛋福利已开启，礼品【' + (obj.couponName || '') + '】', function () {});
+                        } else {
+                            Util.showMessageBox('【' + obj.activityName + '】蛋福利已开启，礼品【' + (obj.couponName || '') + '】', function (action) {
+                                if (action) {
+                                    window.location.href = Config.api.v2Path + 'v2/member/center/per/coupon';
+                                }
+                            });
+                        }
+                    } else {
+                        Util.showAlert('您来晚了，属于初【' + Util.numConvertStr(obj.id) + '】的【' + obj.activityName + '】蛋已封存');
+                    }
+                    break;
+                case 3:
+                    Util.showAlert('【' + obj.activityName + '】蛋初【' + Util.numConvertStr(obj.id) + '】开砸，别错过哦~');
+                    //Util.showAlert('【喜】蛋初四才能砸哦~');
+                    break;
+            }
+        },
+
+        showAddress: function () {
+            Factory.getAddress(function (data) {
+                if (data && data.length) {
+                    var o = data[0];
+                    $('#nameSpn').html(o.name || '');
+                    $('#phoneSpn').html(o.phone || '');
+                    $('#addressSpn').html((o.province || '') + (o.city || '') + (o.dist || '') + (o.address || ''));
+                }
+                $('#bcDiv').show();
+            });
+        }
+    };
+
+    function eggClick(index) {
+        if (!Util.isAuth) {
+            $('#orCodeDiv').show();
+            return;
+        }
+
+        if (userStatus == 0) {
+            $.modal.prototype.defaults.buttonOK = '去认证';
+            Util.showMessageBox('完成认证就能砸蛋，大奖等着您', function (action) {
+                if (action) {
+                    window.location.href = Config.api.v2Path + 'v2/business/pay/certificationRenewal?fullPath=' + location.href + '&external=activity';
+                }
+            });
+        } else {
+            var obj = dataList[index];
+            Factory.getCoupon(obj.id, function (data) {
+                operation.showMsg(data, function () {
+                    if (!data.lotteryStatus) {
+                        operation.initShare(obj);
+                        Factory.shareGift();
+                        $('.dateShare').show();
+                    } else {
+                        if (!obj.couponImg) {
+                            operation.candidates(this, index, data);
+                            obj.couponImg = data.couponImg;
+                            obj.couponName = data.couponName;
+                            obj.lotteryStatus = data.lotteryStatus;
+
+                            if (data.checkAddress) {
+                                operation.showAddress();
+                            }
+
+                            if (data.needShare) {
+                                operation.initShare(data);
+
+                                Factory.shareGift(data, function () {
+                                    localStorage.setItem('activityId', obj.id);
+                                    $(".dateShare").show();
+                                });
+                            } else {
+                                $('#giftImg').attr('src', data.couponImg);
+                                $('#giftP').html(data.couponDesc);
+                                if (!data.checkAddress) {
+                                    $('#giftAlert').show();
+                                }
+                            }
+                        } else {
+                            Util.showMessageBox('【' + obj.activityName + '】蛋福利已开启，礼品【' + obj.couponName + '】', function (action) {
+                                if (action) {
+                                    window.location.href = Config.api.v2Path + 'v2/member/center/per/coupon';
+                                }
+                            });
+                        }
+                    }
+                });
+            }, !Config.api.resourcePath.indexOf('test'));
+        }
+    }
+
+    $('.eggFenge li').each(function () {
+        var index = $(this).index();
+        $(this).click(function () {
+            var imgSrc = $(this).find('img:first').attr('src');
+            var desc = $(this).find('p').html();
+            switch (index) {
+                case 0:
+	                desc = '价值19800元精修大师，免费送';
+	                break;
+                case 1:
+	                desc = '价值14000元尿素泵试验台，免费送';
+                    break;
+                case 10:
+                    desc = desc += '听课券';
+                    break;
+                case 12:
+                    desc = desc += '，免费送';
+                    break;
+                default:
+                    desc = desc + '代金券，抽多少减多少';
+                    break;
+            }
+
+            $("#productImg").attr('src',imgSrc);
+            $("#productP").text(desc);
+            $("#product").show(200)
+        });
+
+    });
+
+
+    $(".getSure").click(function () {
+        $(".eggsAlet").hide(300)
+    });
+    $(".alertOut").click(function () {
+        $(".eggsAlet").hide(300)
+    });
+    $(".shareBox,.shareOut,.sharebox img,.outShare").click(function () {
+        $(".dateShare").css('display','none')
+    });
+    $(".changeAddress").click(function () {
+        window.location.href = Config.api.v2Path + 'v2/member/center/per/address?type=2';
+    })
+
+</script>
+</body>
+</html>
